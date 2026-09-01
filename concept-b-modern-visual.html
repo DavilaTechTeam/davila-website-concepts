@@ -1,8 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Davila & Associates — Bold Modern</title>
+<meta charset="utf-8"/><meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>Davila &amp; Associates — Bold Modern</title>
 <style>
 :root{--navy:#071d33;--navy2:#0e3357;--blue:#4a86c5;--ice:#eef6fd;--muted:#8ea6ba}
 *{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#071d33;color:white} a{text-decoration:none;color:inherit} img{display:block;max-width:100%}
@@ -20,60 +21,82 @@ h1{font-family:Georgia,serif;font-size:clamp(60px,7vw,96px);line-height:.91;marg
 footer{background:#051525;color:#a9c0d3;padding:40px 0} .footer{display:flex;justify-content:space-between;align-items:flex-start;gap:28px} footer .logo{filter:brightness(0) invert(1);opacity:.9} footer p{max-width:620px;font-size:13px;line-height:1.7}
 @media(max-width:950px){nav{display:none} .hero-grid,.head,.story-grid,.request-grid{grid-template-columns:1fr} .cards{grid-template-columns:1fr} .industry-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:620px){.mosaic{grid-template-columns:1fr;grid-template-rows:340px 190px 190px} .mosaic .big{grid-row:auto} .floating,.industry-grid,.story-points{grid-template-columns:1fr} .card{grid-template-columns:1fr}}
+
+.video-modern{padding:96px 0;background:linear-gradient(145deg,#051525,#0b2946)}
+.video-modern-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:52px;align-items:center}
+.video-modern h2{font-family:Georgia,serif;font-size:54px;line-height:1.04;margin:10px 0 18px}
+.video-modern p{color:#b9cddd;line-height:1.75}
+.video-modern .video-shell{border-radius:26px;overflow:hidden;border:1px solid rgba(255,255,255,.14);box-shadow:0 28px 70px rgba(0,0,0,.30);background:#000}
+.video-modern video{display:block;width:100%;aspect-ratio:16/9;background:#000}
+.video-modern .video-kicker{text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:900;color:#91bde5}
+.video-modern .video-note{margin-top:16px;color:#8fa8bb;font-size:13px}
+@media(max-width:950px){.video-modern-grid{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<header><div class="wrap nav"><img class="logo" src="Blue DA Logo.png" alt="Davila & Associates"><nav><a href="#services">Services</a><a href="#industries">Industries</a><a href="#story">Why Davila</a><a href="#request" class="nav-cta">Request Services</a></nav></div></header>
-
+<header><div class="wrap nav"><img alt="Davila &amp; Associates" class="logo" src="Blue DA Logo.png"/><nav><a href="#services">Services</a><a href="#industries">Industries</a><a href="#story">Why Davila</a><a class="nav-cta" href="#request">Request Services</a></nav></div></header>
 <section class="hero">
 <div class="wrap hero-grid">
 <div>
 <div class="eyebrow">Language services since 1985</div>
 <h1>When words matter, accuracy matters more.</h1>
 <p>Professional translation, interpreting, transcription, and legal videography for organizations that cannot afford communication mistakes.</p>
-<div class="actions"><a href="#request" class="btn btn-blue">Start a Request</a><a href="#services" class="btn btn-ghost">Explore Services</a></div>
+<div class="actions"><a class="btn btn-blue" href="#request">Start a Request</a><a class="btn btn-ghost" href="#services">Explore Services</a></div>
 <div class="floating"><div class="float"><strong>40+ Years</strong><span>Established experience</span></div><div class="float"><strong>Secure Upload</strong><span>Microsoft file workflow</span></div><div class="float"><strong>Local Support</strong><span>McAllen, Texas</span></div></div>
 </div>
 <div class="mosaic">
-<div class="big"><img src="hero-language-services.webp" alt=""></div>
-<div><img src="service-translation.webp" alt=""></div>
-<div><img src="service-legal-videography.webp" alt=""></div>
+<div class="big"><img alt="" src="hero-language-services.webp"/></div>
+<div><img alt="" src="service-translation.webp"/></div>
+<div><img alt="" src="service-legal-videography.webp"/></div>
+</div>
+</div>
+</section>
+<section class="video-modern" id="company-video">
+<div class="wrap video-modern-grid">
+<div>
+<div class="video-kicker">Our story</div>
+<h2>See the company behind the service.</h2>
+<p>Our company overview gives clients a closer look at Davila &amp; Associates, our history, and the professional language services we provide.</p>
+<div class="video-note">Company overview • Davila &amp; Associates, Inc.</div>
+</div>
+<div class="video-shell">
+<video controls="" playsinline="" poster="davila-company-video-poster.jpg" preload="metadata">
+<source src="Davila_Company_Overview_GitHub.mp4" type="video/mp4"/>
+        Your browser does not support the video tag.
+      </video>
 </div>
 </div>
 </section>
 
 <section class="light services" id="services">
 <div class="wrap">
-<div class="head"><div><div class="eyebrow">What we do</div><h2>Four services. One experienced team.</h2></div><p>From documents to live proceedings, Davila & Associates brings language support together under one coordinated service experience.</p></div>
+<div class="head"><div><div class="eyebrow">What we do</div><h2>Four services. One experienced team.</h2></div><p>From documents to live proceedings, Davila &amp; Associates brings language support together under one coordinated service experience.</p></div>
 <div class="cards">
-<div class="card"><img src="service-translation.webp" alt=""><div class="card-copy"><h3>Translation</h3><p>Legal, medical, academic, business, and personal documents handled with attention to purpose, audience, and deadline.</p><a href="#request">Request translation →</a></div></div>
-<div class="card"><img src="service-interpretation.webp" alt=""><div class="card-copy"><h3>Interpreting</h3><p>Depositions, hearings, mediations, negotiations, conferences, meetings, and sign-language assignments.</p><a href="#request">Request an interpreter →</a></div></div>
-<div class="card"><img src="service-transcription.webp" alt=""><div class="card-copy"><h3>Transcription</h3><p>Audio, video, court, and electronic-file transcription with dependable delivery and confidentiality.</p><a href="#request">Request transcription →</a></div></div>
-<div class="card"><img src="service-legal-videography.webp" alt=""><div class="card-copy"><h3>Legal Videography</h3><p>Professional recording support for depositions and proceedings, coordinated with interpreting when needed.</p><a href="#request">Request videography →</a></div></div>
+<div class="card"><img alt="" src="service-translation.webp"/><div class="card-copy"><h3>Translation</h3><p>Legal, medical, academic, business, and personal documents handled with attention to purpose, audience, and deadline.</p><a href="#request">Request translation →</a></div></div>
+<div class="card"><img alt="" src="service-interpretation.webp"/><div class="card-copy"><h3>Interpreting</h3><p>Depositions, hearings, mediations, negotiations, conferences, meetings, and sign-language assignments.</p><a href="#request">Request an interpreter →</a></div></div>
+<div class="card"><img alt="" src="service-transcription.webp"/><div class="card-copy"><h3>Transcription</h3><p>Audio, video, court, and electronic-file transcription with dependable delivery and confidentiality.</p><a href="#request">Request transcription →</a></div></div>
+<div class="card"><img alt="" src="service-legal-videography.webp"/><div class="card-copy"><h3>Legal Videography</h3><p>Professional recording support for depositions and proceedings, coordinated with interpreting when needed.</p><a href="#request">Request videography →</a></div></div>
 </div>
 </div>
 </section>
-
 <section class="industries" id="industries">
 <div class="wrap"><div class="eyebrow">Industries</div><h2>Built for high-stakes environments.</h2>
 <div class="industry-grid">
 <div class="industry"><strong>Legal</strong><span>Courts, law firms, depositions, mediations, hearings, and legal records.</span></div>
 <div class="industry"><strong>Education</strong><span>Schools, districts, special education, academic records, and parent communication.</span></div>
 <div class="industry"><strong>Healthcare</strong><span>Medical records, reports, patient communication, and language-access needs.</span></div>
-<div class="industry"><strong>Business & Government</strong><span>Contracts, meetings, public-sector assignments, corporate communication, and special projects.</span></div>
+<div class="industry"><strong>Business &amp; Government</strong><span>Contracts, meetings, public-sector assignments, corporate communication, and special projects.</span></div>
 </div></div>
 </section>
-
 <section class="story" id="story">
 <div class="wrap story-grid">
-<div class="story-img"><img src="team-language-professionals.webp" alt=""></div>
-<div><div class="eyebrow">Why Davila</div><h2>Established enough to trust. Personal enough to call.</h2><p>Davila & Associates has served clients since 1985, combining professional experience with responsive local service and a practical understanding of time-sensitive assignments.</p><div class="story-points"><div>Since 1985</div><div>Legal experience</div><div>Rushed service available</div><div>Secure file intake</div></div></div>
+<div class="story-img"><img alt="" src="team-language-professionals.webp"/></div>
+<div><div class="eyebrow">Why Davila</div><h2>Established enough to trust. Personal enough to call.</h2><p>Davila &amp; Associates has served clients since 1985, combining professional experience with responsive local service and a practical understanding of time-sensitive assignments.</p><div class="story-points"><div>Since 1985</div><div>Legal experience</div><div>Rushed service available</div><div>Secure file intake</div></div></div>
 </div>
 </section>
-
 <section class="request" id="request">
 <div class="wrap request-grid">
-<div><div class="eyebrow">Start here</div><h2>Tell us what you need. We’ll take it from there.</h2><p>Submit your service request. When documents, audio, or video are involved, the workflow sends you directly to the secure Microsoft upload step.</p><div class="contact"><strong>Davila & Associates, Inc.</strong><br>956-630-1995<br>info@translateservices.com<br>4132 N 23rd Street, McAllen, TX 78504</div></div>
+<div><div class="eyebrow">Start here</div><h2>Tell us what you need. We’ll take it from there.</h2><p>Submit your service request. When documents, audio, or video are involved, the workflow sends you directly to the secure Microsoft upload step.</p><div class="contact"><strong>Davila &amp; Associates, Inc.</strong><br/>956-630-1995<br/>info@translateservices.com<br/>4132 N 23rd Street, McAllen, TX 78504</div></div>
 <div class="form-card">
 <div id="davila-hubspot-form" style="min-height:560px"></div>
 <script src="https://js.hsforms.net/forms/embed/v2.js"></script>
@@ -92,6 +115,5 @@ window.addEventListener("load",function(){
 </div>
 </div>
 </section>
-
-<footer><div class="wrap footer"><img class="logo" src="Blue DA Logo.png" alt=""><p>Professional translation, interpreting, transcription, and legal videography since 1985. © 2026 Davila & Associates, Inc.</p></div></footer>
+<footer><div class="wrap footer"><img alt="" class="logo" src="Blue DA Logo.png"/><p>Professional translation, interpreting, transcription, and legal videography since 1985. © 2026 Davila &amp; Associates, Inc.</p></div></footer>
 </body></html>

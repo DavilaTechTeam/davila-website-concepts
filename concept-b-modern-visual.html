@@ -1,133 +1,97 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Davila & Associates — Modern Visual Concept</title>
-<meta name="description" content="Modern professional translation, interpreting, transcription and legal videography services from Davila & Associates.">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Davila & Associates — Bold Modern</title>
 <style>
-:root{--navy:#0f2b49;--blue:#316aa5;--blue2:#4a83bb;--ice:#eef5fb;--ink:#203447;--muted:#637487;--line:#d8e4ed}
-*{box-sizing:border-box} body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;color:var(--ink);background:#fff} a{text-decoration:none;color:inherit} img{max-width:100%;display:block}
-.container{width:min(1220px,92%);margin:auto}
-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);border-bottom:1px solid var(--line);backdrop-filter:blur(14px)} .nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:30px} .logo{width:205px}
-nav{display:flex;align-items:center;gap:25px;font-size:14px;font-weight:800} .btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;border-radius:12px;font-weight:850;border:1px solid transparent} .btn-primary{background:var(--blue);color:#fff;box-shadow:0 10px 24px rgba(49,106,165,.23)} .btn-light{background:white;border-color:#b9cee0;color:var(--navy)}
-.hero{padding:68px 0 30px;background:radial-gradient(circle at 85% 15%,#dbeaf7 0,transparent 32%),linear-gradient(180deg,#f8fbfd,#fff)} .hero-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center} .eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.18em;color:var(--blue);font-weight:950}
-h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(52px,6vw,82px);line-height:.98;color:var(--navy);margin:14px 0 22px;max-width:700px} .hero p{font-size:18px;line-height:1.7;color:#536476;max-width:650px} .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0}
-.hero-visual{display:grid;grid-template-columns:1fr .72fr;gap:14px;min-height:520px} .hero-visual .large,.hero-visual .small{border-radius:22px;overflow:hidden;position:relative} .hero-visual img{width:100%;height:100%;object-fit:cover} .small-stack{display:grid;grid-template-rows:1fr 1fr;gap:14px}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:24px} .stat{border:1px solid var(--line);background:white;border-radius:14px;padding:15px} .stat strong{display:block;color:var(--navy);font-size:18px} .stat span{color:var(--muted);font-size:12px}
-section{padding:76px 0} .section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:32px} .section-head h2{font-family:Georgia,'Times New Roman',serif;color:var(--navy);font-size:48px;line-height:1.05;margin:8px 0 0} .section-head p{max-width:520px;color:var(--muted);line-height:1.7}
-.visual-services{display:grid;grid-template-columns:repeat(2,1fr);gap:20px} .visual-card{display:grid;grid-template-columns:.85fr 1.15fr;background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;box-shadow:0 12px 34px rgba(15,43,73,.06)} .visual-card img{height:100%;min-height:260px;width:100%;object-fit:cover} .visual-copy{padding:30px} .visual-copy h3{font-size:26px;color:var(--navy);margin:0 0 10px} .visual-copy p{color:#5d6e81;line-height:1.65} .visual-copy a{font-weight:900;color:var(--blue)}
-.industry{background:var(--navy);color:white} .industry .eyebrow{color:#9fc3e4} .industry h2{font-family:Georgia,'Times New Roman',serif;font-size:48px;margin:8px 0 25px} .industry-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px} .industry-card{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.06);padding:24px;border-radius:16px} .industry-card strong{display:block;font-size:18px;margin-bottom:8px} .industry-card span{color:#c8d9e8;font-size:13px;line-height:1.6}
-.story{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center} .story-img{border-radius:24px;overflow:hidden} .story-img img{height:460px;width:100%;object-fit:cover} .story h2{font-family:Georgia,'Times New Roman',serif;font-size:49px;color:var(--navy);margin:10px 0 18px} .story p{line-height:1.75;color:#57697c} .story-list{display:grid;gap:11px;margin-top:24px} .story-list div{background:#f7fafc;border:1px solid var(--line);border-radius:13px;padding:15px 17px;font-weight:780;color:var(--navy)}
-.request{background:linear-gradient(140deg,#eaf3fb,#f8fbfd)} .request-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:42px;align-items:start} .request h2{font-family:Georgia,'Times New Roman',serif;font-size:52px;color:var(--navy);margin:10px 0 18px} .request p{color:#586a7d;line-height:1.72} .contact{padding-top:20px;margin-top:20px;border-top:1px solid #c9dbe9;line-height:1.9;font-size:14px} .form-shell{background:#fff;border:1px solid var(--line);border-radius:24px;padding:28px;box-shadow:0 20px 50px rgba(15,43,73,.08);min-height:620px} .hubspot-form-target{min-height:560px}
-footer{background:#0c2239;color:#d5e4f0;padding:42px 0} .footer-grid{display:flex;justify-content:space-between;align-items:flex-start;gap:30px} footer .logo{filter:brightness(0) invert(1);opacity:.93} footer p{max-width:650px;font-size:13px;line-height:1.7;color:#bcd0df}
-@media(max-width:950px){nav{display:none} .hero-grid,.story,.request-grid{grid-template-columns:1fr} .visual-services{grid-template-columns:1fr} .industry-grid{grid-template-columns:1fr 1fr}}
-@media(max-width:650px){.hero-visual{grid-template-columns:1fr;min-height:auto} .hero-visual .large{height:350px} .small-stack{grid-template-columns:1fr 1fr;grid-template-rows:auto} .small{height:190px} .stats,.industry-grid{grid-template-columns:1fr} .visual-card{grid-template-columns:1fr} .footer-grid{display:block}}
+:root{--navy:#071d33;--navy2:#0e3357;--blue:#4a86c5;--ice:#eef6fd;--muted:#8ea6ba}
+*{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#071d33;color:white} a{text-decoration:none;color:inherit} img{display:block;max-width:100%}
+.wrap{width:min(1240px,92%);margin:auto}
+header{position:absolute;top:0;left:0;right:0;z-index:20;padding:24px 0} .nav{display:flex;justify-content:space-between;align-items:center} .logo{width:210px;filter:brightness(0) invert(1)} nav{display:flex;gap:26px;align-items:center;font-size:14px;font-weight:800} .nav-cta{padding:13px 19px;border:1px solid rgba(255,255,255,.35);border-radius:999px}
+.hero{min-height:760px;padding:140px 0 70px;background:radial-gradient(circle at 72% 25%,rgba(74,134,197,.35),transparent 30%),linear-gradient(135deg,#071d33,#0e3357)} .hero-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:58px;align-items:center} .eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:900;color:#91bde5}
+h1{font-family:Georgia,serif;font-size:clamp(60px,7vw,96px);line-height:.91;margin:17px 0 25px;max-width:680px} .hero p{font-size:19px;line-height:1.7;color:#c5d5e2;max-width:640px} .actions{display:flex;gap:13px;margin-top:28px;flex-wrap:wrap} .btn{padding:15px 23px;border-radius:999px;font-weight:850} .btn-blue{background:#4a86c5;color:white} .btn-ghost{border:1px solid rgba(255,255,255,.35)}
+.mosaic{display:grid;grid-template-columns:1.2fr .8fr;grid-template-rows:270px 230px;gap:15px} .mosaic div{overflow:hidden;border-radius:26px;border:1px solid rgba(255,255,255,.12)} .mosaic .big{grid-row:1/3} .mosaic img{width:100%;height:100%;object-fit:cover}
+.floating{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:35px} .float{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);padding:17px;border-radius:16px} .float strong{display:block;font-size:17px} .float span{color:#9eb4c7;font-size:12px}
+.light{background:#fff;color:#203447} .light .eyebrow{color:#4a86c5} .services{padding:90px 0} .head{display:grid;grid-template-columns:1fr .8fr;gap:40px;align-items:end;margin-bottom:42px} .head h2{font-family:Georgia,serif;color:#0b2946;font-size:55px;line-height:1.05;margin:10px 0 0} .head p{color:#617489;line-height:1.7}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px} .card{border-radius:24px;overflow:hidden;background:#f7fafc;border:1px solid #dce6ee;display:grid;grid-template-columns:.9fr 1.1fr;min-height:300px} .card img{width:100%;height:100%;object-fit:cover} .card-copy{padding:34px} .card h3{font-size:30px;color:#0b2946;margin:0 0 12px} .card p{color:#65778a;line-height:1.7} .card a{display:inline-block;margin-top:10px;color:#2d6fac;font-weight:900}
+.industries{padding:90px 0;background:#0b2946} .industries h2{font-family:Georgia,serif;font-size:52px;margin:10px 0 36px} .industry-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px} .industry{padding:28px;background:linear-gradient(160deg,rgba(255,255,255,.08),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.12);border-radius:20px} .industry strong{display:block;font-size:20px;margin-bottom:9px} .industry span{font-size:13px;line-height:1.65;color:#b8cbd9}
+.story{padding:90px 0;background:#edf5fb;color:#21374b} .story-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center} .story-img{border-radius:28px;overflow:hidden;box-shadow:0 24px 60px rgba(20,56,89,.16)} .story-img img{height:510px;width:100%;object-fit:cover} .story h2{font-family:Georgia,serif;color:#0c2946;font-size:54px;margin:12px 0 20px;line-height:1.05} .story p{color:#5e7287;line-height:1.75} .story-points{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:26px} .story-points div{background:white;border:1px solid #d5e3ed;padding:16px;border-radius:14px;color:#0d3154;font-weight:800}
+.request{padding:100px 0;background:white;color:#203447} .request-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:52px;align-items:start} .request h2{font-family:Georgia,serif;font-size:55px;line-height:1.04;color:#0a2946;margin:10px 0 18px} .request p{color:#607387;line-height:1.75} .form-card{background:#fff;border:1px solid #d8e4ed;border-radius:26px;padding:30px;box-shadow:0 22px 65px rgba(16,55,88,.12)} .contact{margin-top:26px;border-top:1px solid #d6e2ec;padding-top:20px;line-height:1.85;font-size:14px}
+footer{background:#051525;color:#a9c0d3;padding:40px 0} .footer{display:flex;justify-content:space-between;align-items:flex-start;gap:28px} footer .logo{filter:brightness(0) invert(1);opacity:.9} footer p{max-width:620px;font-size:13px;line-height:1.7}
+@media(max-width:950px){nav{display:none} .hero-grid,.head,.story-grid,.request-grid{grid-template-columns:1fr} .cards{grid-template-columns:1fr} .industry-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.mosaic{grid-template-columns:1fr;grid-template-rows:340px 190px 190px} .mosaic .big{grid-row:auto} .floating,.industry-grid,.story-points{grid-template-columns:1fr} .card{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-<header>
-<div class="container nav">
-  <img class="logo" src="Blue DA Logo.png" alt="Davila & Associates, Inc.">
-  <nav>
-    <a href="#services">Services</a><a href="#industries">Industries</a><a href="#story">Why Davila</a><a href="#request">Contact</a>
-    <a href="#request" class="btn btn-primary">Request Services</a>
-  </nav>
-</div>
-</header>
+<header><div class="wrap nav"><img class="logo" src="Blue DA Logo.png" alt="Davila & Associates"><nav><a href="#services">Services</a><a href="#industries">Industries</a><a href="#story">Why Davila</a><a href="#request" class="nav-cta">Request Services</a></nav></div></header>
 
-<main>
 <section class="hero">
-<div class="container hero-grid">
-  <div>
-    <div class="eyebrow">Language services • McAllen, Texas</div>
-    <h1>Accuracy matters when communication matters.</h1>
-    <p>Translation, interpreting, transcription, and legal videography backed by decades of experience and personal support from a team that understands high-stakes communication.</p>
-    <div class="hero-actions"><a href="#request" class="btn btn-primary">Start a Service Request</a><a href="#services" class="btn btn-light">Explore Services</a></div>
-    <div class="stats">
-      <div class="stat"><strong>1985</strong><span>Serving clients since</span></div>
-      <div class="stat"><strong>4 Core Services</strong><span>One coordinated team</span></div>
-      <div class="stat"><strong>Secure Upload</strong><span>HubSpot + Microsoft workflow</span></div>
-    </div>
-  </div>
-  <div class="hero-visual">
-    <div class="large"><img src="hero-language-services.webp" alt="Professional client meeting"></div>
-    <div class="small-stack">
-      <div class="small"><img src="service-translation.webp" alt="Translation review"></div>
-      <div class="small"><img src="service-legal-videography.webp" alt="Legal videography"></div>
-    </div>
-  </div>
+<div class="wrap hero-grid">
+<div>
+<div class="eyebrow">Language services since 1985</div>
+<h1>When words matter, accuracy matters more.</h1>
+<p>Professional translation, interpreting, transcription, and legal videography for organizations that cannot afford communication mistakes.</p>
+<div class="actions"><a href="#request" class="btn btn-blue">Start a Request</a><a href="#services" class="btn btn-ghost">Explore Services</a></div>
+<div class="floating"><div class="float"><strong>40+ Years</strong><span>Established experience</span></div><div class="float"><strong>Secure Upload</strong><span>Microsoft file workflow</span></div><div class="float"><strong>Local Support</strong><span>McAllen, Texas</span></div></div>
+</div>
+<div class="mosaic">
+<div class="big"><img src="hero-language-services.webp" alt=""></div>
+<div><img src="service-translation.webp" alt=""></div>
+<div><img src="service-legal-videography.webp" alt=""></div>
+</div>
 </div>
 </section>
 
-<section id="services">
-<div class="container">
-  <div class="section-head">
-    <div><div class="eyebrow">Services</div><h2>Built around the assignment, not a template.</h2></div>
-    <p>Every project has a different audience, deadline, and level of sensitivity. We organize the right language support around those requirements.</p>
-  </div>
-  <div class="visual-services">
-    <article class="visual-card"><img src="service-translation.webp" alt=""><div class="visual-copy"><h3>Translation</h3><p>Legal, medical, business, academic, personal, and certified-document support with careful review and clear delivery.</p><a href="#request">Request translation →</a></div></article>
-    <article class="visual-card"><img src="service-interpretation.webp" alt=""><div class="visual-copy"><h3>Interpreting</h3><p>Depositions, hearings, mediations, conferences, meetings, negotiations, and sign-language assignments.</p><a href="#request">Request an interpreter →</a></div></article>
-    <article class="visual-card"><img src="service-transcription.webp" alt=""><div class="visual-copy"><h3>Transcription</h3><p>Professional handling of audio, video, electronic files, and court-related material with confidentiality in mind.</p><a href="#request">Request transcription →</a></div></article>
-    <article class="visual-card"><img src="service-legal-videography.webp" alt=""><div class="visual-copy"><h3>Legal Videography</h3><p>Professional recording support for depositions and legal proceedings, coordinated with interpreting when needed.</p><a href="#request">Request videography →</a></div></article>
-  </div>
+<section class="light services" id="services">
+<div class="wrap">
+<div class="head"><div><div class="eyebrow">What we do</div><h2>Four services. One experienced team.</h2></div><p>From documents to live proceedings, Davila & Associates brings language support together under one coordinated service experience.</p></div>
+<div class="cards">
+<div class="card"><img src="service-translation.webp" alt=""><div class="card-copy"><h3>Translation</h3><p>Legal, medical, academic, business, and personal documents handled with attention to purpose, audience, and deadline.</p><a href="#request">Request translation →</a></div></div>
+<div class="card"><img src="service-interpretation.webp" alt=""><div class="card-copy"><h3>Interpreting</h3><p>Depositions, hearings, mediations, negotiations, conferences, meetings, and sign-language assignments.</p><a href="#request">Request an interpreter →</a></div></div>
+<div class="card"><img src="service-transcription.webp" alt=""><div class="card-copy"><h3>Transcription</h3><p>Audio, video, court, and electronic-file transcription with dependable delivery and confidentiality.</p><a href="#request">Request transcription →</a></div></div>
+<div class="card"><img src="service-legal-videography.webp" alt=""><div class="card-copy"><h3>Legal Videography</h3><p>Professional recording support for depositions and proceedings, coordinated with interpreting when needed.</p><a href="#request">Request videography →</a></div></div>
+</div>
 </div>
 </section>
 
-<section class="industry" id="industries">
-<div class="container">
-  <div class="eyebrow">Industries we serve</div><h2>Professional communication across demanding environments.</h2>
-  <div class="industry-grid">
-    <div class="industry-card"><strong>Legal</strong><span>Courts, law firms, depositions, hearings, mediations, and legal documents.</span></div>
-    <div class="industry-card"><strong>Education</strong><span>Schools, districts, special education meetings, academic records, and family communication.</span></div>
-    <div class="industry-card"><strong>Healthcare</strong><span>Medical records, reports, patient communication, and language access support.</span></div>
-    <div class="industry-card"><strong>Business & Government</strong><span>Contracts, meetings, public-sector assignments, corporate communication, and special projects.</span></div>
-  </div>
-</div>
+<section class="industries" id="industries">
+<div class="wrap"><div class="eyebrow">Industries</div><h2>Built for high-stakes environments.</h2>
+<div class="industry-grid">
+<div class="industry"><strong>Legal</strong><span>Courts, law firms, depositions, mediations, hearings, and legal records.</span></div>
+<div class="industry"><strong>Education</strong><span>Schools, districts, special education, academic records, and parent communication.</span></div>
+<div class="industry"><strong>Healthcare</strong><span>Medical records, reports, patient communication, and language-access needs.</span></div>
+<div class="industry"><strong>Business & Government</strong><span>Contracts, meetings, public-sector assignments, corporate communication, and special projects.</span></div>
+</div></div>
 </section>
 
-<section id="story">
-<div class="container story">
-  <div class="story-img"><img src="team-language-professionals.webp" alt="Professional language services team"></div>
-  <div>
-    <div class="eyebrow">Why Davila</div><h2>More than four decades of experience still feels personal.</h2>
-    <p>Davila & Associates combines an established reputation with responsive local service. Clients come to us when accuracy, professionalism, turnaround time, and confidentiality all matter at once.</p>
-    <div class="story-list">
-      <div>Serving clients since 1985</div><div>Experienced with legal and public-sector work</div><div>Rushed service available upon request</div><div>Secure document-upload workflow</div>
-    </div>
-  </div>
+<section class="story" id="story">
+<div class="wrap story-grid">
+<div class="story-img"><img src="team-language-professionals.webp" alt=""></div>
+<div><div class="eyebrow">Why Davila</div><h2>Established enough to trust. Personal enough to call.</h2><p>Davila & Associates has served clients since 1985, combining professional experience with responsive local service and a practical understanding of time-sensitive assignments.</p><div class="story-points"><div>Since 1985</div><div>Legal experience</div><div>Rushed service available</div><div>Secure file intake</div></div></div>
 </div>
 </section>
 
 <section class="request" id="request">
-<div class="container request-grid">
-  <div>
-    <div class="eyebrow">Start here</div><h2>Tell us what you need. We’ll take it from there.</h2>
-    <p>Submit the project details below. After the request is received, clients with files are sent directly into the secure Microsoft upload process.</p>
-    <div class="contact"><strong>Davila & Associates, Inc.</strong><br>956-630-1995<br>info@translateservices.com<br>4132 N 23rd Street, McAllen, TX 78504</div>
-  </div>
-  <div class="form-shell">
-<div id="davila-hubspot-form" class="hubspot-form-target"></div>
-<script charset="utf-8" type="text/javascript" src="https://js.hsforms.net/forms/embed/v2.js"></script>
+<div class="wrap request-grid">
+<div><div class="eyebrow">Start here</div><h2>Tell us what you need. We’ll take it from there.</h2><p>Submit your service request. When documents, audio, or video are involved, the workflow sends you directly to the secure Microsoft upload step.</p><div class="contact"><strong>Davila & Associates, Inc.</strong><br>956-630-1995<br>info@translateservices.com<br>4132 N 23rd Street, McAllen, TX 78504</div></div>
+<div class="form-card">
+<div id="davila-hubspot-form" style="min-height:560px"></div>
+<script src="https://js.hsforms.net/forms/embed/v2.js"></script>
 <script>
-window.addEventListener("load", function(){
-  if(window.hbspt && window.hbspt.forms){
-    hbspt.forms.create({
-      region:"na2",
-      portalId:"245581111",
-      formId:"96d910c8-9983-4468-bd7b-eecdc3d6e2f7",
-      target:"#davila-hubspot-form"
-    });
-  }
+window.addEventListener("load",function(){
+ if(window.hbspt&&window.hbspt.forms){
+  hbspt.forms.create({
+   region:"na2",
+   portalId:"245581111",
+   formId:"96d910c8-9983-4468-bd7b-eecdc3d6e2f7",
+   target:"#davila-hubspot-form"
+  });
+ }
 });
 </script>
-<script id="hs-script-loader" async defer src="https://js.hs-scripts.com/245581111.js"></script>
 </div>
 </div>
 </section>
-</main>
 
-<footer><div class="container footer-grid"><img class="logo" src="Blue DA Logo.png" alt="Davila & Associates"><p>Professional translation, interpreting, transcription, and legal videography services since 1985. © 2026 Davila & Associates, Inc.</p></div></footer>
-</body>
-</html>
+<footer><div class="wrap footer"><img class="logo" src="Blue DA Logo.png" alt=""><p>Professional translation, interpreting, transcription, and legal videography since 1985. © 2026 Davila & Associates, Inc.</p></div></footer>
+</body></html>
